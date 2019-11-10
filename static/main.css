@@ -1,11 +1,12 @@
 body {
   padding: 0;
   margin: 0;
-  background: #ffffff;
+  background: #f7f7f7;;
 }
 /*--- navigation bar ---*/
 .navbar {
   background:#000000;
+
 }
 .nav-link,
 .navbar-brand {
@@ -21,6 +22,7 @@ body {
 .navbar-collapse {
   justify-content: flex-end;
 }
+
 .header {
   background-image: url('../static/main.jpg');
   background-size: cover;
@@ -36,6 +38,7 @@ body {
   margin-bottom: 0;
   font-family: 'Nunito', serif;
  } 
+
 
  .jumbotron-heading { 
   font-family: 'Oswald', serif;
@@ -94,4 +97,13 @@ font-family: 'Abril Fatface', serif;
 
 div.col-xs-4.col-sm-4.col-md-4.col-lg-4{
   padding: 10px;
+}
+
+.text{
+  position: relative;
+  color: #fff;
+  font-family: 'Oswald', serif;
+  text-align: center;
+  top: 50%;
+  font-size: 30px;
 }
