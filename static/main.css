@@ -22,7 +22,7 @@ body {
   justify-content: flex-end;
 }
 .header {
-  background-image: url('main.jpg');
+  background-image: url('../static/main.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -142,88 +142,40 @@ body {
 font-family: 'Abril Fatface', serif;
 }
 
-body{margin-top:20px;}
-/* Portfolio */
-.portfolio-grid figure {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
-  background-color: #ffffff;
+.card {
+  border: 0;
 }
 
-.portfolio-grid figure img {
+.container {
   position: relative;
-  display: block;
-  min-height: 100%;
-  max-width: 100%;
   width: 100%;
 }
 
-.portfolio-grid figure figcaption {
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+.overlay {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   height: 100%;
-}
-
-.portfolio-grid figure figcaption:after, .portfolio-grid figure figcaption:before {
-  pointer-events: none;
-}
-
-.portfolio-grid figure.effect-text-in {
-  border-radius: 0.25rem;
-}
-
-.portfolio-grid figure.effect-text-in h4,
-.portfolio-grid figure.effect-text-in img {
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-}
-
-.portfolio-grid figure.effect-text-in img {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.portfolio-grid figure.effect-text-in h4,
-.portfolio-grid figure.effect-text-in p {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  padding: 10px;
-  margin-bottom: 0;
   width: 100%;
-}
-
-.portfolio-grid figure.effect-text-in p {
-  text-transform: none;
   opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0, 50px, 0);
-  transform: translate3d(0, 50px, 0);
+  transition: .5s ease;
+  background-color: #000000;
 }
 
-.portfolio-grid figure.effect-text-in:hover img {
-  -webkit-transform: translate3d(0, -80px, 0);
-  transform: translate3d(0, -80px, 0);
+.container:hover .overlay {
+  opacity: 0.8;
 }
 
-.portfolio-grid figure.effect-text-in:hover h4 {
-  -webkit-transform: translate3d(0, -100px, 0);
-  transform: translate3d(0, -100px, 0);
-}
-
-.portfolio-grid figure.effect-text-in:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
