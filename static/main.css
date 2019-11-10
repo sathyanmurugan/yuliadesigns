@@ -27,104 +27,7 @@ body {
   background-position: center;
   position: relative;
 }
-.overlay {
-  position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.6);
-}
-.description {
-  left: 50%;
-  position: absolute;
-  top: 45%;
-  transform: translate(-50%, -55%);
-  text-align: center;
-}
-.description h1 {
-  color: #6ab446;
-}
-.description p {
-  color: #fff;
-  font-size: 1.3rem;
-  line-height: 1.5;
-}
-.description button {
-  border:1px solid #fff;
-  background:#fff;
-  border-radius: 3;
-  color:#000;
-}
-.description button:hover {
-  border:1px solid #fff;
-  background:#fff;
-  color:#000;
-}
-.features {
-  margin: 4em auto;
-  padding: 1em;
-  position: relative;
-}
-.feature-title {
-  color: #333;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-.features img {
-  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  margin-bottom: 16px;
-}
-.features .form-content,
-.features input {
-    border-radius: 0;
-}
-.features .btn {
-  background-color: #589b37;
-  border: 3px solid #589b37;
-  color: #fff;
-  border-radius: 3;
-  margin-top: 20px;
-}
-.features .btn:hover {
-  background-color: #333;
-  border: 1px solid #333;
-}
-.page-footer {
-  background-color: #222;
-  color: #ccc;
-  padding: 60px 0 30px;
-}
-.footer-copyright {
-  color: #666;
-  padding: 40px 0;
-}
-@media (max-width: 575.98px) {
-  .description {
-    left: 0;
-    padding: 0 15px;
-    position: absolute;
-    top: 10%;
-    transform: none;
-    text-align: center;
-  }
-  
-  .description h1 {
-    font-size: 2em;
-  }
-  
-  .description p {
-    font-size: 1.2rem;
-  }
-  
-  .features {
-    margin: 0;
-  }
-}
+
 .jumbotron { 
   background-image: url('main.jpg');
   background-position: center;
@@ -146,11 +49,10 @@ font-family: 'Abril Fatface', serif;
   border: 0;
 }
 
-
 .content-overlay {
   background: rgba(0,0,0,0.7);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
@@ -164,46 +66,6 @@ font-family: 'Abril Fatface', serif;
 
 .content:hover .content-overlay{
   opacity: 1;
-}
-
-.content-image{
-  width: 100%;
-}
-
-.content-details {
-  position: absolute;
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.content:hover .content-details{
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-}
-
-.content-details h3{
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
-
-.content-details p{
-  color: #fff;
-  font-size: 0.8em;
 }
 
 .fadeIn-bottom{
@@ -222,7 +84,14 @@ font-family: 'Abril Fatface', serif;
   left: 80%;
 }
 
-.img-fluid {
+.row {
   padding: 10px;
 }
 
+.content {
+  position: relative;
+}
+
+div.col-xs-4.col-sm-4.col-md-4.col-lg-4{
+  padding: 10px;
+}
