@@ -107,3 +107,23 @@ div.col-xs-4.col-sm-4.col-md-4.col-lg-4{
   top: 50%;
   font-size: 30px;
 }
+
+.img-responsive{
+  width: 100%;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+@media (max-width: 480px){
+  .img-responsive{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+#project_page .py-3{
+  position: relative;
+  font-family: 'Nunito', serif;
+  
+  
+}
