@@ -124,6 +124,8 @@ div.col-xs-4.col-sm-4.col-md-4.col-lg-4{
 #project_page .py-3{
   position: relative;
   font-family: 'Nunito', serif;
-  
-  
+}
+
+.img{
+  object-position: center;
 }

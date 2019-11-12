@@ -8,10 +8,41 @@ app = flask.Flask(__name__)
 def main():
 	return flask.render_template('main.html', title="Yulia's Portfolio")
 
-@app.route('/project')
-def project():
-	return flask.render_template('project.html', title="Yulia's Portfolio")
+@app.route('/poster')
+def poster():
+	return flask.render_template('poster.html', title="Poster")
 
+@app.route('/iconset')
+def iconset():
+	return flask.render_template('iconset.html', title="Icons")
+
+@app.route('/editorui')
+def editorui():
+	return flask.render_template('editorui.html', title="Editor UI")	
+
+@app.route('/aiwebsite')
+def aiwebsite():
+	return flask.render_template('aiwebsite.html', title="AI website")
+
+@app.route('/motion')
+def motion():
+	return flask.render_template('motion.html', title="Motion studies")	
+
+@app.route('/appredesign')
+def appredesign():
+	return flask.render_template('appredesign.html', title="App redesign")	
+
+@app.route('/contenthub')
+def contenthub():
+	return flask.render_template('contenthub.html', title="Content hub")	
+
+@app.route('/presentation')
+def presentation():
+	return flask.render_template('presentation.html', title="Presentation layout")	
+
+@app.route('/campaign')
+def campaign():
+	return flask.render_template('campaign.html', title="Campaign")		
 
 @app.route('/exportCV')
 def exportCV():
