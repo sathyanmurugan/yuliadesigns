@@ -111,6 +111,8 @@ div.col-xs-4.col-sm-4.col-md-4.col-lg-4{
 .img-responsive{
   width: 100%;
   height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (max-width: 480px){
