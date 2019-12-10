@@ -42,7 +42,11 @@ def presentation():
 
 @app.route('/campaign')
 def campaign():
-	return flask.render_template('campaign.html', title="Campaign")		
+	return flask.render_template('campaign.html', title="Campaign")
+
+@app.route('/moonwalk')
+def moonwalk():
+	return flask.render_template('moonwalk.html', title="Moon Walk")	
 
 @app.route('/exportCV')
 def exportCV():
