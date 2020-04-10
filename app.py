@@ -20,9 +20,9 @@ def iconset():
 def editorui():
 	return flask.render_template('editorui.html', title="Editor UI")	
 
-@app.route('/aiwebsite')
-def aiwebsite():
-	return flask.render_template('aiwebsite.html', title="AI website")
+@app.route('/treatwell')
+def treatwell():
+	return flask.render_template('treatwell.html', title="Working from here")
 
 @app.route('/motion')
 def motion():
@@ -50,7 +50,7 @@ def moonwalk():
 
 @app.route('/exportCV')
 def exportCV():
-	return flask.send_from_directory(app.static_folder,'CV.pdf', as_attachment=True)
+	return flask.send_from_directory(app.static_folder,'CV_yulia.pdf', as_attachment=True, cache_timeout=0)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8080)
