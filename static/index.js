@@ -30,17 +30,17 @@ $(".img-arrow").click(function() {
         scrollTop: $(".folio-start").offset().top -300},
         'slow');
 });
-
-const span = document.querySelector(".email");
-
-span.onclick = function() {
-  document.execCommand("copy");
-}
-
-span.addEventListener("copy", function(event) {
-  event.preventDefault();
-  if (event.clipboardData) {
-    event.clipboardData.setData("text/plain", span.textContent);
-    console.log(event.clipboardData.getData("text"))
-  }
-});
+//
+// const span = document.querySelector(".font-awesome");
+//
+// span.onclick = function() {
+//   document.execCommand("copy");
+// }
+//
+// span.addEventListener("copy", function(event) {
+//   event.preventDefault();
+//   if (event.clipboardData) {
+//     event.clipboardData.setData("text/plain", span.textContent);
+//     console.log(event.clipboardData.getData("text"))
+//   }
+// });
