@@ -31,6 +31,7 @@ body {
   position: relative;
   bottom: 0;
   left: 0;
+  clear: right
 }
 
 .footer-info {
@@ -175,6 +176,22 @@ div.col-xs-4.col-sm-4.col-md-4.col-lg-4 {
   width: 20%;
 }
 
+.img-meduim {
+  width: 60%;
+  height: auto;
+  float: right;
+
+}
+
+.img-support {
+  width: 40%;
+}
+
+.img-example{
+  width: 70%;
+  margin-top: 3%;
+}
+
 /*-- Mobile --*/
 @media (max-width: 600px) {
   body {
@@ -222,6 +239,10 @@ div.col-xs-4.col-sm-4.col-md-4.col-lg-4 {
   .img-folio {
     position: fixed;
     flex: 0;
+  }
+
+  .img-support {
+    width: 70%;
   }
 
   .img-card {
