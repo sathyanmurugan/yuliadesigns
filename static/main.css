@@ -183,8 +183,19 @@ div.col-xs-4.col-sm-4.col-md-4.col-lg-4 {
 
 }
 
+.img-gif {
+  width: 20%;
+  padding-left: 30px;
+}
+
+.img-gifer {
+  width: 48%;
+  padding-top: 30px;
+}
+
 .img-support {
   width: 40%;
+  margin-bottom: 30px;
 }
 
 .img-example{
