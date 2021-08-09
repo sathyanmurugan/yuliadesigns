@@ -1,19 +1,18 @@
 {% extends "base.html" %}
 {% block body %}
 <body>
-
-
   <main role="main">
 
     <section class="jumbotron text-left">
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <h2 class="jumbotron-heading">Hi there! My name is Yulia and
-              I’m a designer with several years of experience in visual, interaction and brand design. I am excited to develop <span class="highlight">beautiful experiences</span> for your users.</h2>
+            <h3 class="jumbotron-heading">Hi there! My name is Yulia and I’m a product designer, and I currently work for Intersport.<br><br>
+              I enjoy developing delightful and data-informed experiences focused on humans and their digital journeys.
+            </h3>
 
-            <!-- <a href="{{url_for('exportCV')}}" class="btn my-2 button-color">Download CV</a> -->
-            <!-- <a href="https://www.linkedin.com/in/iuliia-shevchenko-9492bb141/" class="btn btn-outline-dark my-2" target="_blank">LinkedIn Profile</a> -->
+            <!--<a href="{{url_for('exportCV')}}" class="btn my-2 button-color">Download CV</a>-->
+            <a href="https://www.linkedin.com/in/iuliia-shevchenko-9492bb141/" class="btn my-2 button-color" target="_blank">LinkedIn Profile</a>
 
           </div>
           <div class="col-sm">
@@ -27,127 +26,55 @@
       </div>
     </section>
 
+    <img src="../static/next.svg" class="img-fluid img-arrow">
+
     <div class="container cards">
 
-      <img src="../static/next.svg" class="img-fluid img-arrow" alt="Responsive image">
-
       <div class="row">
-
         <div class="col-sm div-order-1">
-          <a href="{{url_for('poster')}}">
-            <img src="../static/card1.jpg" class="img-fluid img-card img-responsive" alt="Responsive image">
+          <a href="{{presentation_1_url}}" target="_blank">
+            <img src="../static/projects/card1.png" class="img-fluid img-card img-responsive">
           </a>
         </div>
         <div class="col-sm div-order-2">
-          <h2 class="text folio-start">Poster Visual Identity</h2>
-          <p class="text paragraph">Product migration and implementation.</p>
+          <h2 class="text project-title">Re-designing the Product Details Page (PDP)</h2>
+          <p class="text project-description">All users go through a product page before making a purchase, and it’s often on the product page where users make up their mind on whether or not they want to purchase the item. 
+            This makes the product page the centerpiece of users’ e-commerce experience.</p>
+          <p class="text project-cta"><a href="{{presentation_1_url}}" target="_blank">View Project</a></p>
         </div>
-
       </div>
 
       <div class="row">
-
-        <div class="col-sm div-order-15">
-          <h2 class="text">Co-browsing app</h2>
-          <p class="text paragraph">Rethinking the way we collaborate online.</p>
+        <div class="col-sm div-order-1">
+          <h2 class="text project-title">Re-thinking the Checkout flow</h2>
+          <p class="text project-description">The purpose of the checkout flow is to provide the customer with a smooth and simple way of finalising their purchase. 
+            A lot of a drop off happens at this step and by minimising any friction, we can help the customer to complete their shopping process and prevent any frustration.
+          </p>
+          <p class="text project-cta"><a href="{{presentation_2_url}}" target="_blank">View Project</a></p>
         </div>
-        <div class="col-sm div-order-16">
-          <a href="{{url_for('appredesign')}}">
-            <img src="../static/card6.png" class="img-fluid img-card img-responsive" alt="Responsive image">
+        <div class="col-sm div-order-2">
+          <a href="{{presentation_2_url}}" target="_blank">
+            <img src="../static/projects/card2.png" class="img-fluid img-card img-responsive">
           </a>
         </div>
-
       </div>
 
       <div class="row">
-
-        <div class="col-sm div-order-5">
-          <a href="{{url_for('treatwell')}}">
-            <img src="../static/treatwell.jpg" class="img-fluid img-card img-responsive" alt="Responsive image">
+        <div class="col-sm div-order-1">
+          <a href="{{presentation_3_url}}" target="_blank">
+            <img src="../static/projects/card3.png" class="img-fluid img-card img-responsive">
           </a>
         </div>
-        <div class="col-sm div-order-6">
-          <h2 class="text">Working from here</h2>
-          <p class="text paragraph">Hub for beauty content.</p>
+        <div class="col-sm div-order-2">
+          <h2 class="text project-title">Co-browsing app</h2>
+          <p class="text project-description">Surfly is the global market leader for co-browsing technology, powering in-person online experiences for more than 100,000 users and over 2 million sessions per year. 
+            Aside from providing a co-browsing solution, we wanted to introduce a better video and text chat functionalities, drastically improve mobile experience for the users and ease every step of the user’s journey.
+          </p>
+          <p class="text project-cta"><a href="{{presentation_3_url}}" target="_blank">View Project</a></p>
         </div>
+      </div> 
 
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm div-order-7">
-          <h2 class="text">Photo editor UI</h2>
-          <p class="text paragraph">AI feature introduction.</p>
-        </div>
-        <div class="col-sm div-order-8">
-          <a href="{{url_for('editorui')}}">
-            <img src="../static/card3.jpg" class="img-fluid img-card img-responsive" alt="Responsive image">
-          </a>
-        </div>
-
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm div-order-9">
-          <a href="{{url_for('motion')}}">
-            <img src="../static/card8.gif" class="img-fluid img-card img-responsive" alt="Responsive image">
-          </a>
-        </div>
-        <div class="col-sm div-order-10">
-          <h2 class="text">Motion studies</h2>
-          <p class="text paragraph">Practicing those moves.</p>
-        </div>
-
-
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm div-order-11">
-          <h2 class="text">Moonwalk</h2>
-          <p class="text paragraph">Traveling to moon has never been so smooth.</p>
-        </div>
-        <div class="col-sm div-order-12">
-          <a href="{{url_for('moonwalk')}}">
-            <img src="../static/card9.jpg" class="img-fluid img-card img-responsive" alt="Responsive image">
-          </a>
-        </div>
-
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm div-order-13">
-          <a href="{{url_for('contenthub')}}">
-            <img src="../static/card7.jpg" class="img-fluid img-card img-responsive" alt="Responsive image">
-          </a>
-        </div>
-        <div class="col-sm div-order-14">
-          <h2 class="text">Content hub</h2>
-          <p class="text paragraph">Series of motion illustrations.</p>
-        </div>
-
-
-      </div>
-
-
-
-      <div class="row">
-
-        <div class="col-sm div-order-3">
-          <h2 class="text">Icon set</h2>
-          <p class="text paragraph">Custom icons for a photo app.</p>
-        </div>
-        <div class="col-sm div-order-4">
-          <a href="{{url_for('iconset')}}">
-            <img src="../static/icons.jpg" class="img-fluid img-card img-responsive" alt="Responsive image">
-          </a>
-        </div>
-
-
-      </div>
-
-    </div>
+    </div>        
+</main>  
 </body>
 {% endblock %}

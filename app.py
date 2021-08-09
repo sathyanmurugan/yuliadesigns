@@ -1,52 +1,19 @@
 import flask
 import os
 import json
+import constants
 
 app = flask.Flask(__name__)
 
 @app.route('/')
 def main():
-	return flask.render_template('main.html', title="Yulia's Portfolio")
-
-@app.route('/poster')
-def poster():
-	return flask.render_template('poster.html', title="Poster")
-
-@app.route('/iconset')
-def iconset():
-	return flask.render_template('iconset.html', title="Icons")
-
-@app.route('/editorui')
-def editorui():
-	return flask.render_template('editorui.html', title="Editor UI")	
-
-@app.route('/treatwell')
-def treatwell():
-	return flask.render_template('treatwell.html', title="Working from here")
-
-@app.route('/motion')
-def motion():
-	return flask.render_template('motion.html', title="Motion studies")	
-
-@app.route('/appredesign')
-def appredesign():
-	return flask.render_template('appredesign.html', title="App redesign")	
-
-@app.route('/contenthub')
-def contenthub():
-	return flask.render_template('contenthub.html', title="Content hub")	
-
-@app.route('/presentation')
-def presentation():
-	return flask.render_template('presentation.html', title="Presentation layout")	
-
-@app.route('/campaign')
-def campaign():
-	return flask.render_template('campaign.html', title="Campaign")
-
-@app.route('/moonwalk')
-def moonwalk():
-	return flask.render_template('moonwalk.html', title="Moon Walk")	
+	return flask.render_template(
+		'main.html', 
+		title="Yulia's Portfolio",
+		presentation_1_url=constants.PDP_PRESENTATION_URL,
+		presentation_2_url=constants.CHECKOUT_PRESENTATION_URL,
+		presentation_3_url=constants.COBROWSING_PRESENTATION_URL,
+		)
 
 @app.route('/exportCV')
 def exportCV():

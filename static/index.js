@@ -27,7 +27,7 @@ $(".nav-link").click(function() {
 
 $(".img-arrow").click(function() {
     $('html,body').animate({
-        scrollTop: $(".folio-start").offset().top -300},
+        scrollTop: $(".project-cta").offset().top -300},
         'slow');
 });
 //
