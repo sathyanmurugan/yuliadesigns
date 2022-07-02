@@ -19,15 +19,15 @@ logoAnimation.add({
 })
 
 
-$(".nav-link").click(function() {
+$(".work-link").click(function() {
     $('html,body').animate({
-        scrollTop: $(".page-footer").offset().top},
+        scrollTop: $(".case-studies").offset().top},
         'slow');
 });
 
-$(".img-arrow").click(function() {
+$(".about-link").click(function() {
     $('html,body').animate({
-        scrollTop: $(".project-cta").offset().top -300},
+        scrollTop: $(".about-text").offset().top -300},
         'slow');
 });
 //

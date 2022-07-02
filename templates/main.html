@@ -4,81 +4,92 @@
   <main role="main">
 
     <section class="jumbotron text-left">
+
       <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <h3 class="jumbotron-heading">Hi there! My name is Yulia and I’m a product designer, and I currently work for Intersport.<br><br>
-              I enjoy developing delightful and data-informed experiences focused on humans and their digital journeys.
+            <h3 class="jumbotron-heading">Hey, I'm Yulia. I'm a Product Designer with a focus on Design Systems and crafting experiences at scale.
             </h3>
-
-            <!--<a href="{{url_for('exportCV')}}" class="btn black-background white">Download CV</a>-->
-            <a href="https://www.linkedin.com/in/iuliia-shevchenko-9492bb141/" class="btn black-background white head-btn" target="_blank">LinkedIn Profile</a>
-
-          </div>
-          <div class="col-sm">
-            <div class="container img-jumbotron" id="img-group">
-              <img src="../static/black_ellipse.svg" class="img-fluid img-folio img-top" alt="Responsive image">
-              <img src="../static/folio.png" class="img-fluid img-folio" alt="Responsive image" id="img-portfolio">
-              <img src="../static/blue_ellips.svg" class="img-fluid img-folio img-bottom" alt="Responsive image">
-            </div>
-          </div>
-        </div>
       </div>
+
     </section>
 
-    <img src="../static/next.svg" class="img-fluid img-arrow">
+  
+  <section class="case-studies">
+
+    <div class="container">
+      <h1 class="text subtitle">Case studies</h1>
+    </div>
 
     <div class="container cards">
 
-      <div class="row">
-        <div class="col-sm div-order-1">
+      <div class="row project-cards">
+
           <a href="{{presentation_1_url}}" target="_blank">
-            <img src="../static/projects/card1.png" class="img-fluid img-card img-responsive">
+            <img src="../static/projects/card1.png" class="img-fluid img-responsive">
           </a>
-        </div>
-        <div class="col-sm div-order-2">
-          <h2 class="text project-title">Re-designing the Product Details Page (PDP)</h2>
-          <p class="text project-description">All users go through a product page before making a purchase, and it’s often on the product page where users make up their mind on whether or not they want to purchase the item. 
+   
+          <h2 class="text project-title">Design system "The Heart" - building a scalable framework.</h2>
+          <!-- <p class="text project-description">All users go through a product page before making a purchase, and it’s often on the product page where users make up their mind on whether or not they want to purchase the item. 
             This makes the product page the centerpiece of users’ e-commerce experience.
-          </p>
-          <p class="text project-cta"><a href="{{presentation_1_url}}" target="_blank" class="btn black-background white">View Project</a></p>
-        </div>
-      </div> 
-
-
-    
-
-      <div class="row">
-        <div class="col-sm div-order-1">
-          <h2 class="text project-title">Re-thinking the Checkout flow</h2>
-          <p class="text project-description">The purpose of the checkout flow is to provide the customer with a smooth and simple way of finalising their purchase. 
-            A lot of a drop off happens at this step and by minimising any friction, we can help the customer to complete their shopping process and prevent any frustration.
-          </p>
-          <p class="text project-cta"><a href="{{presentation_2_url}}" target="_blank" class="btn black-background white">View Project</a></p>
-        </div>
-        <div class="col-sm div-order-2">
-          <a href="{{presentation_2_url}}" target="_blank">
-            <img src="../static/projects/card2.png" class="img-fluid img-card img-responsive">
-          </a>
-        </div>
+          </p> -->
       </div>
 
-      <div class="row">
-        <div class="col-sm div-order-1">
+
+
+      <div class="row project-cards">
+    
+        <a href="{{presentation_2_url}}" target="_blank">
+            <img src="../static/projects/card2.png" class="img-fluid img-responsive">
+        </a>
+        
+        <h2 class="text project-title">Checkout process - simple purchasing, regardless online or offline.</h2>
+        <!-- <p class="text project-description">The purpose of the checkout flow is to provide the customer with a smooth and simple way of finalising their purchase. 
+          A lot of a drop off happens at this step and by minimising any friction, we can help the customer to complete their shopping process and prevent any frustration.
+        </p> -->
+          
+      </div>
+
+
+      <div class="row project-cards">
+        
           <a href="{{presentation_3_url}}" target="_blank">
-            <img src="../static/projects/card3.png" class="img-fluid img-card img-responsive">
+            <img src="../static/projects/card3.png" class="img-fluid img-responsive">
           </a>
-        </div>
-        <div class="col-sm div-order-2">
-          <h2 class="text project-title">Co-browsing app</h2>
-          <p class="text project-description">Surfly is the global market leader for co-browsing technology, powering in-person online experiences for more than 100,000 users and over 2 million sessions per year. 
+  
+          <h2 class="text project-title">Building a co-browsing expereince.</h2>
+          <!--<p class="text project-description">Surfly is the global market leader for co-browsing technology, powering in-person online experiences for more than 100,000 users and over 2 million sessions per year. 
             Aside from providing a co-browsing solution, we wanted to introduce a better video and text chat functionalities, drastically improve mobile experience for the users and ease every step of the user’s journey.
-          </p>
-          <p class="text project-cta"><a href="{{presentation_3_url}}" target="_blank" class="btn black-background white">View Project</a></p>
-        </div>
+          </p> -->
+          
       </div> 
 
-    </div>        
+    </div> 
+  </section>  
+
+  <section>
+
+      <div class="container about">
+        <div>
+        <h1 class="text subtitle">Hello</h1>
+      </div>
+
+
+
+
+    <div class="container row">
+
+      <div class="col-md-5">
+        <img src="../static/projects/card4.png" class="img-self img-fluid img-responsive">
+     </div>
+
+     <div class="col-md-4 about-text">
+      <h6>I thrive on creating designs that are expressive, intentional and kind to people interacting with it.</h6>
+       <p>My mission is to create scalable experiences and design languages, that enable others across the organisation to connect with the users.<br><br>Currently, I’m a Senior Designer at Intersport where I focus on designing and adopting our Design System, The Heart. 
+       </p>
+     </div>
+      </div>
+    </div>
+  </section> 
+
 </main>  
 </body>
 {% endblock %}

@@ -17,7 +17,7 @@ def main():
 
 @app.route('/exportCV')
 def exportCV():
-	return flask.send_from_directory(app.static_folder,'CV_yulia.pdf', as_attachment=True, cache_timeout=0)
+	return flask.send_from_directory(app.static_folder,'CV.pdf', as_attachment=True, cache_timeout=0)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8080)
