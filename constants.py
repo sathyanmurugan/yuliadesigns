@@ -1,3 +1,3 @@
-PDP_PRESENTATION_URL = "https://docs.google.com/presentation/d/e/2PACX-1vSKBsvaH9eZ0r3fjYAwtTOZt9i9ji23eS-GwTXedi8RR7yJZAd4U3-OI0PEhnKH2BNB48IbxLR-rmNK/pub?start=false&loop=false&delayms=3000"
+DESIGN_SYSTEM_PRESENTATION_URL = "https://docs.google.com/presentation/d/e/2PACX-1vTIOrVLFSGPYp3Hjx5G6kkgsiGTnp4Rr1v72AD8Wtt6u5IZAcW5_x-KGpiIAmSUa5R2HqeZDWUM2Wop/pub?start=false&loop=false&delayms=60000"
 CHECKOUT_PRESENTATION_URL = "https://docs.google.com/presentation/d/e/2PACX-1vQIKLqGxEgJjf_s-jhaPjjSzmVe4EumaCR5zGagRwxxA1dl12Ym5ekH5jO-wBC6YCbryKiE8e0pkNga/pub?start=false&loop=false&delayms=30000"
 COBROWSING_PRESENTATION_URL = "https://docs.google.com/presentation/d/e/2PACX-1vSw39Ih07TUhSUHMrE6-8mhxeB0eHbbjRltmyJHaWs14GBMG8n8iuqVtkH9a1cH9OY62wZuCSRIBk4W/pub?start=false&loop=false&delayms=30000"

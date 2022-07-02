@@ -10,7 +10,7 @@ def main():
 	return flask.render_template(
 		'main.html', 
 		title="Yulia's Portfolio",
-		presentation_1_url=constants.PDP_PRESENTATION_URL,
+		presentation_1_url=constants.DESIGN_SYSTEM_PRESENTATION_URL,
 		presentation_2_url=constants.CHECKOUT_PRESENTATION_URL,
 		presentation_3_url=constants.COBROWSING_PRESENTATION_URL,
 		)
